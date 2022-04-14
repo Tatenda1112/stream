@@ -1,8 +1,7 @@
-keras
-tensorflow
-streamlit
-numpy
-pundas
 opencv-python-headless
-Pillow
-tensflow_gpu
+keras
+numpy==1.19.5
+Pillow==9.1.0
+streamlit==1.8.1
+tensorflow
+tensorflow_gpu
