@@ -38,14 +38,13 @@ if uploaded_file is not None:
                 prediction = predictor(os.path.join(f'static/images/{frameNr}.jpg'))
                 prediction = decode_predictions(prediction)
                 predition_names = []
-                for each in prediction[0]:
-                    predition_names.append(each[1])
-                if search in predition_names : 
-                    st.image(frame)
-                    st.text('Predictions :-')
-                    st.text(prediction)
-                    os.remove(os.path.join(f'static/images/{frameNr}.jpg'))
+                st.image(frame)
+                st.text('Predictions :-')
+                st.text(prediction)
+                os.remove(os.path.join(f'static/images/{frameNr}.jpg'))
             else:
+                break
+            if frameNr > 10 :
                 break
         
             frameNr = frameNr+1
