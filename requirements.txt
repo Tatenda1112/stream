@@ -1,0 +1,8 @@
+keras
+tensorflow
+streamlit
+numpy
+pundas
+opencv-python-headless
+Pillow
+tensflow_gpu
